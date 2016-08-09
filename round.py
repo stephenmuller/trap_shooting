@@ -2,42 +2,32 @@
 
 
 class Round:
-    """Stores a single round of trap shooting"""
-    def __init__(self):
-        self.singles_round = []
-        self.shotgun_shells = shotgun_shells
-        self.starting_station = starting_station
-        self.player_name = player_name
+    """stores a single round of trap"""
+    def __init__(self, singles_round, player):
+        self.singles_round = singles_round
+        self.player = player
         self.date = date
+        self.starting_station = starting_station
+        self.shotgun_shells = shotgun_shells
+        self.gun = gun
         self.excuses = excuses
 
-    # def __eq__(self, other):
-    #     """implements equality
-    #
-    #     >>> a = Round()
-    #     >>> b = Round()
-    #     >>> a == b
-    #     True
-    #
-    #     >>> a = Round([0, 1, 0, 1])
-    #     >>> b = Round()
-    #     >>> a == b
-    #     False
-    #     """
-    #     return(
-    #         self.singles_round == other.singles_round and
-    #         self.shotgun_shells == other.shotgun_shells and
-    #         self.starting_station = other.starting_station and
-    #         self.player_name = other.player_name and
-    #         self.date = other.date and
-    #         self.excuses = other.excuses
-    #     )
+    def __eq__(self, other):
+        self.singles_round = other.singles_round
+        self.player = other.player
+        self.date = other.date
+        self.starting_station = other.starting_station
+        self.shotgun_shells = other.shotgun_shells
+        self.gun = other.gun
+        self.excuses = other.excuses
 
     def __repr__(self):
-        """implements repr"""
-        return 'Round({})'.format(singles_round)
+        return 'Round({!r}{!r}{!r}{!r}{!r}{!r}{!r})'.format(
+            singles_round, player, date, starting_station, shotgun_shells,
+            gun, excuses
+        )
 
-def hit_miss(self, hit_or_miss):
+def hit_miss(hit_or_miss):
     """Adds result of each shot to a list stored in a round class.
 
     Expects maybe to be a boolean.
@@ -48,6 +38,6 @@ def hit_miss(self, hit_or_miss):
     >>> a
     """
     if hit_or_miss:
-        self.singles_round.append[True]
+        self.singles_round.append([True])
     else:
-        self.singles_round.append[False]
+        self.singles_round.append([False])

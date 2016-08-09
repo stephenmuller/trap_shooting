@@ -3,8 +3,8 @@
 
 class Round:
     """stores a single round of trap"""
-    def __init__(self, singles_round, player):
-        self.singles_round = singles_round
+    def __init__(self, player):
+        self.singles_round = []
         self.player = player
         self.date = date
         self.starting_station = starting_station
@@ -32,7 +32,7 @@ def hit_miss(hit_or_miss):
 
     Expects maybe to be a boolean.
 
-    >>> a = Round()
+    >>> a = Round('goober')
     >>> a.hit_miss(True)
     >>> a.hit_miss(False)
     >>> a

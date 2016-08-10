@@ -2,7 +2,7 @@
 
 import time
 from singles_score import SinglesScore
-from player impor Player
+from player import Player
 
 
 

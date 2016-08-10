@@ -1,21 +1,18 @@
-"""Stores all the information about a player"""
+"""A class for storing basic player information
 
-from round import Round
-
+'gun' will eventually be a class for storing things like make/model, barrel information, chokes etc.
+"""
 
 class Player:
 
-    def __init__(self, name, rounds):
+    def __init__(self, name):
         self.name = name
-        self.rounds = []
-        self.info = info
+        self.gun = 'gun placeholder'
 
     def __eq__(self, other):
         """eq"""
-        self.name = other.name
-        self.rounds = other.rounds
-        self.info = other.info
+        Return ( self.name == other.name and self.gun == other.gun)
 
     def __repr__(self):
         """repr"""
-        return'Player({},{},{},'
+        return 'Player({},{}'.format(self.name, self.gun)

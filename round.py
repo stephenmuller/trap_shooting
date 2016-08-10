@@ -2,14 +2,15 @@
 
 import time
 from singles_score import SinglesScore
+from player impor Player
 
 
 
 class Round:
     """stores a single round of trap"""
-    def __init__(self, player):
-        self.singles_round = []
-        self.player = player
+    def __init__(self):
+        self.singles_round = SinglesScore()
+        self.player = Player()
         self.date = time.strftime('%Y-%m-%d %H:%M:%S')
         self.starting_station = 1
         # self.shotgun_shells = shotgun_shells

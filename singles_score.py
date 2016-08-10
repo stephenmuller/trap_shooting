@@ -27,7 +27,7 @@ class SinglesScore:
         return self.score.count(True)
 
     def missed_target(self, target_number):
-        r"""For setting a value to false
+        """For setting a value to false
 
         >>> a = SinglesScore()
         >>> a.missed_target(24)

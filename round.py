@@ -1,6 +1,7 @@
 """Stores a single round"""
 
 import time
+from singles_score import SinglesScore
 
 
 
@@ -16,13 +17,15 @@ class Round:
         # self.excuses = excuses
 
     def __eq__(self, other):
-        self.singles_round = other.singles_round
-        self.player = other.player
-        self.date = other.date
-        self.starting_station = other.starting_station
-        # self.shotgun_shells = other.shotgun_shells
-        # self.gun = other.gun
-        # self.excuses = other.excuses
+        return(
+            self.singles_round == other.singles_round and
+            self.player == other.player and
+            self.date == other.date and
+            self.starting_station == other.starting_station
+            # self.shotgun_shells = other.shotgun_shells
+            # self.gun = other.gun
+            # self.excuses = other.excuses
+        )
 
     def __repr__(self):
         return 'Round({!r}{!r}{!r}{!r})'.format(

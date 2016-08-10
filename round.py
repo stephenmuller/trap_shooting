@@ -7,7 +7,7 @@ from player import Player
 
 
 class Round:
-    """stores a single round of trap"""
+    """Links together the various classes/information for one round"""
     def __init__(self):
         self.singles_round = SinglesScore()
         self.player = Player()
@@ -33,17 +33,3 @@ class Round:
             singles_round, player, date, starting_station
         )
 
-    def hit_miss(self, hit_or_miss):
-        """Adds result of each shot to a list stored in a round class.
-
-        Expects maybe to be a boolean.
-
-        >>> a = Round('goober')
-        >>> a.hit_miss(True)
-        >>> a.hit_miss(False)
-        >>> a
-        """
-        if hit_or_miss:
-            self.singles_round.append([True])
-        else:
-            self.singles_round.append([False])

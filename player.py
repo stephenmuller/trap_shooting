@@ -4,15 +4,20 @@
 """
 
 class Player:
-
+    """Stores re-occurring player data"""
     def __init__(self, name):
         self.name = name
         self.gun = 'gun placeholder'
+        self.shells = 'shells placeholder'
 
     def __eq__(self, other):
         """eq"""
-        Return ( self.name == other.name and self.gun == other.gun)
+        Return (
+            self.name == other.name and
+            self.gun == other.gun and
+            self.shells == other.shells
+        )
 
     def __repr__(self):
         """repr"""
-        return 'Player({},{}'.format(self.name, self.gun)
+        return 'Player({},{},{}'.format(self.name, self.gun, self.shells)

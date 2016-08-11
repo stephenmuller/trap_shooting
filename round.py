@@ -13,8 +13,6 @@ class Round:
         self.player = Player()
         self.date = time.strftime('%Y-%m-%d %H:%M:%S')
         self.starting_station = 1
-        # self.shotgun_shells = shotgun_shells
-        # self.gun = gun
         # self.excuses = excuses
 
     def __eq__(self, other):
@@ -23,8 +21,6 @@ class Round:
             self.player == other.player and
             self.date == other.date and
             self.starting_station == other.starting_station
-            # self.shotgun_shells = other.shotgun_shells
-            # self.gun = other.gun
             # self.excuses = other.excuses
         )
 

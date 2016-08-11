@@ -5,8 +5,8 @@
 
 class Player:
     """Stores re-occurring player data"""
-    def __init__(self, name):
-        self.name = name
+    def __init__(self):
+        self.name = 'name'
         self.gun = 'gun placeholder'
         self.shells = 'shells placeholder'
 

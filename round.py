@@ -1,29 +1,29 @@
-"""Keeps track of a single round"""
+"""Stores a single round"""
+
+import time
+from singles_score import SinglesScore
+from player import Player
+
 
 
 class Round:
-    """Stores a single round of trap shooting"""
-    def __init__(self, singles_round):
-        self.singles_round = []
+    """Links together the various classes/information for one round"""
+    def __init__(self):
+        self.singles_round = SinglesScore()
+        self.player = Player()  # stores user specific data that is mostly static
+        self.date = time.strftime('%Y-%m-%d %H:%M:%S')
+        self.starting_station = 1  # the default station is one, small detail only useful for statistics
 
     def __eq__(self, other):
-        """implements equality
-
-        >>> a = Round()
-        >>> b = Round()
-        >>> a == b
-        True
-
-        >>> a = Round([0, 1, 0, 1])
-        >>> b = Round()
-        >>> a == b
-        False
-        """
         return(
-            self.singles_round == other.singles_round
+            self.singles_round == other.singles_round and
+            self.player == other.player and
+            self.date == other.date and
+            self.starting_station == other.starting_station
         )
 
     def __repr__(self):
-        """implements repr"""
-        return 'Round({}, {})'.format(singles_round)
+        return 'Round({!r}{!r}{!r}{!r})'.format(
+            singles_round, player, date, starting_station
+        )
 

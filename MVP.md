@@ -19,12 +19,12 @@ The core focus of this app is to keep track of scores and information about trap
   * 5x5 grid of target pictures, clickable to set hit/miss, hit by default
   * Ability to just input a score by # EG. 23 or 4, 5, 3, 5, 5 without specific orders
   * Drop downs/menus/etc for relavent details
-** Shells
-** Gun
-** Location
-** Weather
-** External conditions/excuses (wind, lighting, busy day, etc)
-** save/autosave functionality?
+   * Shells
+   * Gun
+   * Location
+   * Weather
+   * External conditions/excuses (wind, lighting, busy day, etc)
+* save/autosave functionality?
 Group page:
 Ability to score 5 games simultaneously (the max amount of people in a squad)
 

@@ -6,18 +6,27 @@ The core focus of this app is to keep track of scores and information about trap
 ### Specific Functionality
 
 **Main Page:**
-  * login/username - advanced goal
+  * index of players
   * Longest streak
-  * Users last score
+  * last score submitted
+  * advanced goals:
+    * map with nearby locations
+    * user login
+    * tailor front page data to the logged in user
 
 **Player page:**
   * Time-sorted list of rounds
-  * Place to add shotgun/shell/location data
-  * Basic statistics, hit %, average score, best score, longest streak
+  * Place to add shotgun/shell/location data to your profile
+  * Basic statistics:
+    * hit %
+    * average score
+    * best score
+    * longest streak
+    * total shots
 
 **Round Page:**
   * 5x5 grid of target pictures, clickable to set hit/miss, hit by default
-  * Ability to just input a score by # EG. 23 or 4, 5, 3, 5, 5 without specific orders
+  * Ability to just input a score using integers EG. 23 or 4, 5, 3, 5, 5 without specific orders (would take away the ability to run some statistics vs the stats, but allow greater user flexibility)
   * Drop downs/menus/etc for relavent details
    * Shells
    * Gun

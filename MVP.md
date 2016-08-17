@@ -24,7 +24,8 @@ The core focus of this app is to keep track of scores and information about trap
    * Location
    * Weather
    * External conditions/excuses (wind, lighting, busy day, etc)
-* save/autosave functionality?
-Group page:
-Ability to score 5 games simultaneously (the max amount of people in a squad)
+   * save/autosave functionality?
+
+**Group page:**
+ * Ability to score 5 games simultaneously (the max amount of people in a squad)
 

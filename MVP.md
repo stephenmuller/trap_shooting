@@ -62,4 +62,4 @@ One of the major moving parts in this is having unique ID's for players to tie r
   For example Portland Gun Club hosts day long events with things like special targets, classes (beginner, intermediate, expert). There would be a database of entrants, a page to display the scores (seperated by class), flags for special targets, etc. 
 * the ability to store pictures in the 'player'/user section. The person, guns, shotgun shell boxes, etc.
 * The ability to store custom data about 'handloads', what poweder, wad, shot, hulls, etc.
-* 
+* a page to compare a player to player(s) or statistics based on the 'nouns'

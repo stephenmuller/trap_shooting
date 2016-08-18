@@ -1,7 +1,7 @@
 # **Score Keeper**
 
 ## A brief introduction
-Trap shooting is one of the most popular shotgun based shooting sports. Originally based around practicing shooting pidgeons people quickly moved on to clay targets. Each round of the game consists of 25 targets, shot in sets of 5 targets from 5 points 16 yards from the 'house' (generally a cement enclosure with an automatic target thrower inside). The maximum score is 25 targets and as people progress they gravitate towards a cumulative score over 4 rounds. There are other variations including doubles (two targets every time, for a total of 50) and Handicap, which is shot up to 27 yards from the house.
+Trap shooting is one of the most popular shotgun based shooting sports. Originally based around practicing shooting pigeons people quickly moved on to clay targets. Each round of the game consists of 25 targets, shot in sets of 5 targets from 5 points 16 yards from the 'house' (generally a cement enclosure with an automatic target thrower inside). The maximum score is 25 targets and as people progress they gravitate towards a cumulative score over 4 rounds. There are other variations including doubles (two targets every time, for a total of 50) and Handicap, which is shot up to 27 yards from the house.
 
 ### Product Overview
 The core focus of this app is to keep track of scores and information about trap shooting. It will allow a player to easily log scores and relavent details (eg. shells, weather, location) to look for trends that show over time. 

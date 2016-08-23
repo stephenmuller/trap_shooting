@@ -35,3 +35,11 @@ class SinglesScore:
         [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False]
         """
         self.score[target_number] = False
+
+    def station_score(self, score_out_of_five, station):
+        """
+
+        :param score_out_of_five: int value between 1 and 5 representing the score at a station, assumed
+        :param station: station shot from, 
+        :return:
+        """

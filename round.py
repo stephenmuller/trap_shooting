@@ -8,10 +8,10 @@ from player import Player
 
 class Round:
     """Links together the various classes/information for one round"""
-    def __init__(self):
+    def __init__(self, player):
         self.singles_round = SinglesScore()
-        self.player = Player()  # stores user specific data that is mostly static
-        self.date = time.strftime('%Y-%m-%d %H:%M:%S') # can be used to pull weather later
+        self.player = player  # stores user specific data that is mostly static
+        self.date = time.strftime('%Y-%m-%d %H:%M:%S')  # can be used to pull weather later
         self.starting_station = 1  # the default station is one, small detail only useful for statistics
         self.location = 'Portland Gun Club' # static for now, eventually will use the day class for this information
 
@@ -25,6 +25,6 @@ class Round:
 
     def __repr__(self):
         return 'Round({!r}{!r}{!r}{!r})'.format(
-            singles_round, player, date, starting_station
+            self.singles_round, self.player, self.date, self.starting_station
         )
 

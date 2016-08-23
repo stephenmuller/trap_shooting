@@ -47,7 +47,6 @@ The app will need to store a handful of very spefic things:
    * Name
    * Location
    * Shotgun make/model
-   * 
  * details about a specific round:
    * date/time
    * location

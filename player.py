@@ -6,8 +6,8 @@
 class Player:
     """Stores re-occurring player data"""
     def __init__(self):
-        self.name = 'name'
-        self.gun = 'gun placeholder'
+        self.name = 'Stephen Muller' # placeholder name
+        self.gun = 'Beretta a400 Xplor Unico' # placeholder gun
         self.shells = 'shells placeholder'
 
     def __eq__(self, other):

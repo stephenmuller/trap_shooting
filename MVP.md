@@ -39,11 +39,15 @@ The core focus of this app is to keep track of scores and information about trap
    * save/autosave functionality?
 
 **Group page:**
- * Ability to score 5 games simultaneously (the max amount of people in a squad)
+ * Ability to score 5 rounds simultaneously (the max amount of people in a squad)
 
 ## Data Model
 The app will need to store a handful of very spefic things:
  * The 'player'/user
+   * Name
+   * Location
+   * Shotgun make/model
+   * 
  * details about a specific round:
    * date/time
    * location

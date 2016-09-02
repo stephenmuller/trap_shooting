@@ -28,3 +28,7 @@ class Round:
             self.singles_round, self.player, self.date, self.starting_station
         )
 
+    def print_score(self):
+        """prints the int value of a score"""
+        print(self.singles_round.score_as_int())
+
